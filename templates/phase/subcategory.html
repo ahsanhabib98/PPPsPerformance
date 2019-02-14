@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	{% for subcategory in subcategory %}
+		<h1><a href="{% url 'childcategory' subcategory.id %}">{{subcategory.name}}</a></h1>
+	{% endfor %}
+
+</body>
+</html>

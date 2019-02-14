@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1><a href="{% url 'category' %}">Phase</a></h1>
+
+	{% for category in category %}
+		<h1><a href="{% url 'subcategory' category.id %}">{{category.name}}</a></h1>
+	{% endfor %}
+
+</body>
+</html>
